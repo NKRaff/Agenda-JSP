@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/address-book-regular.svg">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/20102b8b28.js" crossorigin="anonymous"></script>
+	<title>| Agenda de Contatos</title>
+</head>
+<body>
+	<div class="container" id="container-form">
+		<h2>Criar novo contato</h2>
+		<form name="form-contato" action="insert" autocomplete="off">
+			<div class="user-box">
+				<input type="text" name="nome" required="required">
+				<label>Nome</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="email" required="required">
+				<label>Email</label>
+			</div>
+			<div class="user-box">
+				<input type="number" name="fone" required="required">
+				<label>Telefone</label>
+			</div>
+			<div id="div-btn">
+				<button type="submit" onclick="validar()">
+					<a>	
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Adicionar
+					</a>
+				</button>
+			</div>
+		</form>
+	  </div>
+
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
